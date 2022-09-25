@@ -9,7 +9,6 @@
     <title>Publinka</title>
 </head>
 <body>
-    <?php include "php/chargement/index.php";?>
     <nav class="navbar fixed-top">
         <strong id="image">PUBLINKA LOGO</strong>
         <ul>
