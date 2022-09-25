@@ -1,0 +1,91 @@
+input[type="text"]{
+    text-align:center;;
+    text-transform: capitalize;
+}
+body{
+    background-image: url(../img/grisback.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.corps{
+    padding: 5px;
+    margin-top: 8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+fieldset{
+    transform: translate(90%,-45%);
+    position: absolute;
+    top:45%;
+    left:15%;
+    border-radius: 60px 0px 60px 0px;
+    border-top: 1px solid rgb(19, 112, 250);
+    border-left: 1px solid rgb(19, 112, 250);
+    border-right: 1px solid rgb(19, 112, 250);
+    border-bottom: 1px solid rgb(19, 112, 250);
+    box-shadow: 15px 15px 10px silver;
+    width:32em;
+    height:50em;
+}
+#h1S{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 1em;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-shadow:0px 0px 0.5px black;
+    margin-right: 15em;
+}
+
+input{
+   background: none;
+   width: 20em;
+   height: 2em;
+   border: 2px solid silver;
+   border-radius: 5px;
+   padding-left: 15px;
+}
+#accepte{
+    background: red;
+}
+#btn1{
+    width: 7em;
+    height:3.2em;
+    margin-top: -4px;
+    margin-bottom: 10px;
+    border: none;
+    color: #ffffff;
+    background: linear-gradient(80deg,rgb(19, 112, 250),silver,rgb(19, 112, 250));
+    border-radius: 20px 0px 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 1em;
+    font-size: 15px;
+    font-weight: normal;
+    box-shadow: 6px 6px 4px 1px silver;
+}
+#btn1:hover{
+    background: linear-gradient(50deg,rgb(19, 112, 250),silver,rgb(19, 112, 250));
+    color: #ffffff;
+    border: none;
+}
+#btn2{
+    width: 7em;
+    height:3.2em;
+    margin-top: -4px;
+    margin-bottom: 10px;
+    border: none;
+    color: #ffffff;
+    background: linear-gradient(50deg,rgb(240, 2, 2),silver,rgb(240, 2, 2));
+    border-radius: 0px 20px 0px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 1em;
+    font-size: 15px;
+    font-weight: normal;
+    box-shadow: 6px 6px 4px 1px silver;
+}
+#btn2:hover{
+    background: linear-gradient(90deg,rgb(240, 2, 2),silver,rgb(240, 2, 2));
+    color: #ffffff;
+    border: none;
+}

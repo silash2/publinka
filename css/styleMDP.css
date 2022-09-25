@@ -1,0 +1,48 @@
+body{
+    background-image: url(../img/grisback.jpg);
+    margin-top: 7em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+#h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        margin-top: 4em;
+        margin-left: 10.8em;
+}
+#numero{
+    background: none;
+    width: 17em;
+    height: 2em;
+    border: 2px solid silver;
+    margin-top: -9em;
+    border-radius: 5px;
+    padding-left: 8px;
+ }
+ #numero::placeholder{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: silver;
+    font-size: 15px;
+ }
+ #button{
+    width: 7em;
+    height:3.2em;
+    margin-top: -8em;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background: linear-gradient(50deg,rgb(6, 100, 241),silver);
+    border-radius: 20px 0px 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 1em;
+    font-size: 15px;
+    font-weight: normal;
+    box-shadow: 6px 6px 4px 1px silver;
+}
+#button:hover{
+    background: linear-gradient(90deg,rgb(6, 100, 241),silver,rgb(6, 100, 241));
+    color: #ffffff;
+    border: none;
+    
+}

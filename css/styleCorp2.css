@@ -1,0 +1,30 @@
+body{
+    background-image: url(../img/grisback.jpg);
+}
+#hI{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: silver;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 3px black;
+}
+#slt1{
+    border: 2px solid rgb(19, 112, 250);
+    border-radius: 5px;
+    width: 25em;
+    height: 3em;
+    background: none;
+    color: rgb(82, 81, 81);
+    box-shadow: 3px 5px 5px silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#inptY{
+    width: 10em;
+    height:2em;
+    background: rgb(19, 112, 250);
+    color: #ffffff;
+    border: 1px solid rgb(19, 112, 250);
+    box-shadow: 3px 5px 5px silver;
+    border-radius: 5px;
+}

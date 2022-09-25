@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box
+}
+body{
+    background-image: url(../img/grisback.jpg);
+    margin: 0;
+    padding: 0;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+div[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+@media only screen and (min-height: 360px){
+    .col-md-1{ width: 10% }
+    .col-md-2{ width: 15% }
+    .col-md-3{ width: 20% }
+    .col-md-4{ width: 30% }
+    .col-md-5{ width: 40% }
+    .col-md-6{ width: 50% }
+    .col-md-7{ width: 55% }
+    .col-md-8{ width: 66% }
+    .col-md-9{ width: 75% }
+    .col-md-10{ width: 83% }
+    .col-md-11{ width: 91% }
+    .col-md-12{ width: 100% }
+}
+@media only screen and (min-height: 768px){
+    .col-l-1{ width: 10% }
+    .col-l-2{ width: 15% }
+    .col-l-3{ width: 20% }
+    .col-l-4{ width: 30% }
+    .col-l-5{ width: 40% }
+    .col-l-6{ width: 50% }
+    .col-l-7{ width: 55% }
+    .col-l-8{ width: 66% }
+    .col-l-9{ width: 75% }
+    .col-l-10{ width: 83% }
+    .col-l-11{ width: 91% }
+    .col-l-12{ width: 100% }
+}
+.corps{
+    margin-top: 7em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.field{
+    margin-top: 5em;
+    margin-left: 5em;
+    border-radius: 60px 0px 60px 0px;
+    border-top: 1px solid rgb(19, 112, 250);
+    border-left: 1px solid rgb(19, 112, 250);
+    border-right: 1px solid rgb(19, 112, 250);
+    border-bottom: 1px solid rgb(19, 112, 250);
+    box-shadow: 15px 15px 10px silver;
+    width:27em;
+    height:31em;
+    zoom:1;
+}
+#h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 1.3em;
+}
+#p1{
+    margin-right: 13.1em;
+    margin-top: 45px;
+    margin-bottom: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-shadow:0px 0px 0.5px black;
+}
+#numeroEtemail{
+   background: none;
+   width: 17em;
+   height: 2em;
+   border: 2px solid silver;
+   margin-top: 1px;
+   border-radius: 5px;
+}
+#p2{
+    margin-right: 15em;
+    margin-top: 9px;
+    margin-bottom: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-shadow:0px 0px 0.5px black;
+}
+#motDepasse{
+   background: none;
+   width: 17em;
+   height:2em;
+   border: 2px solid silver;
+   margin-top: 3px;
+   border-radius: 5px;
+}
+#p3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-left: 10em;
+    margin-top: 5px;
+}
+#btn{
+    width: 7em;
+    height:3.2em;
+    margin-top: -4px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background: linear-gradient(50deg,rgb(6, 100, 241),silver);
+    border-radius: 20px 0px 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 1em;
+    font-size: 15px;
+    font-weight: normal;
+    box-shadow: 6px 6px 4px 1px silver;
+}
+#btn:hover{
+    background: linear-gradient(90deg,rgb(6, 100, 241),silver,rgb(6, 100, 241));
+    color: #ffffff;
+    border: none;
+}
+#p4{
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 12em;
+    margin-top: 10px;
+}

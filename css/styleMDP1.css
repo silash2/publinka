@@ -1,0 +1,68 @@
+body{
+    background-image: url(../img/grisback.jpg);
+    margin-top: 7em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+#h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        margin-top: 4em;
+        margin-left: 10.8em;
+}
+#NP-H1{
+    margin-top: 1.5em;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-left: 6em;
+}
+#inpt1{
+    background: none;
+    width: 17em;
+    height: 2.5em;
+    border: 2px solid silver;
+    margin-top: -1em;
+    border-radius: 5px;
+    padding-left: 8px;
+ }
+ #inpt1::placeholder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: silver;
+    font-size: 15px;
+ }
+ #inpt2{
+    background: none;
+    width: 17em;
+    height: 2.5em;
+    border: 2px solid silver;
+    margin-top: 1em;
+    border-radius: 5px;
+    padding-left: 8px;
+ }
+ #inpt2::placeholder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: silver;
+    font-size: 15px;
+ }
+ #btn{
+    width: 7em;
+    height:3.2em;
+    margin-top: -0.5em;
+    margin-bottom: 10px;
+    margin-left: -8.5em;
+    border: none;
+    color: white;
+    background: linear-gradient(50deg,rgb(6, 100, 241),silver);
+    border-radius: 20px 0px 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 1em;
+    font-size: 15px;
+    font-weight: normal;
+    box-shadow: 6px 6px 4px 1px silver;
+}
+#btn:hover{
+    background: linear-gradient(90deg,rgb(6, 100, 241),silver,rgb(6, 100, 241));
+    color: #ffffff;
+    border: none;
+}
