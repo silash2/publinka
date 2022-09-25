@@ -1,0 +1,6 @@
+
+
+
+
+
+$("#clip").accordion();
