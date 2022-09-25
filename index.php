@@ -12,7 +12,7 @@
     <nav class="navbar fixed-top">
         <strong id="image">PUBLINKA LOGO</strong>
         <ul>
-          <li><a href="php/registre/index.php" id="a1">Registre</a></li>
+          <li><a href="php/registre/index.php" id="a1" style="float:right">Registre</a></li>
           <li><a href="php/log/index.php" id="a2">Login</a></li>
         </ul>
     </nav>
