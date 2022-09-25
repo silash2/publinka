@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/styleCorp2.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin| publinka</title>
+</head>
+<body>
+    <a href="../../php/accueil/accueil.php">retour</a>
+<center>
+    <h1 id="hI">
+            Insertion Publinka
+    </h1>
+    <form action="../../php/admin/insertionObjet/index.php" method="post" enctype="multipart/form-data">
+        <select name="typeDefichier" required id="slt1">
+            <option value="">Choisissez le type de fichier ici</option>
+            <option value="logo">logo</option>
+            <option value="carte">carte</option>
+            <option value="affiche">affiche</option>
+            <option value="spot">spot</option>
+        </select>
+        <br>
+        <br>
+        <input type="file" required name="photo" id="">
+        <br>
+        
+        <br>
+        <input type="submit" name="valider" value="valider"id="inptY">
+    </form>
+</center>
+</body>
+</html>

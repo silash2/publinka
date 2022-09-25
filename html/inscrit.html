@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styleConnecter.css">
+    <title>Connecter</title>
+</head>
+
+    <nav class="fixed-top me navbar col navbar-brand">
+        <center>
+      <i style="border-radius: 5px;background-color: none;float:left;box-shadow: 1px 1px 2px 1px silver;" >
+                <big id="pub">
+                    PUB
+                </big>
+                <i id="link">
+
+                </i>
+                 </i>
+                 
+        
+        <a href="#" style="float:right" id="reception" >Reception<sup style="border-radius: 10px;color:white" id="notification"></sup> </a>
+        <a href="#" id="commande" style="float:right;margin-right:1cm;resize:both;" >Commander mon projet</a>
+    </center>
+</center>
+    </nav>
+    <body>
+
+        <div id="men">
+            <fieldset id="menu3" >
+            <i id="fermer1" style="width:2cm;height:2cm;background-color:red;color:white">
+
+            </i>
+            <p id="list">
+                        
+            </p>
+
+            <p id="list1" >
+                        
+            </p>
+
+            <p id="list2" >
+                        
+            </p>
+            
+            <p id="list3" >
+                        
+            </p>
+        </fieldset>
+        </div>
+
+        <div id="select">
+            <i id="fermer" style="width:2cm;height:2cm;background-color:red;color:white">
+
+            </i>
+            <ul>
+                <form action="../../client/client.php" method="post">
+                    <b>
+                    <li><input type="submit" name="spot" style="border-color:none;border-style:none;color:black;background-color:transparent" value="Spot Pub(2D)"></li>
+                    <li><input type="submit" name="logo" style="border-color:none;border-style:none;color:black;background-color:transparent" value="Logo"></li>
+                    <li><input type="submit" name="affiche" style="border-color:none;border-style:none;color:black;background-color:transparent" value="Affiche"></li>
+                    <li><input type="submit" name="carte" style="border-color:none;border-style:none;color:black;background-color:transparent" value="Carte de visite"></li>
+                </b>
+                </form>
+            </ul>
+        </div>
+        
+        <style>
+            input[type="submit"]{
+                color:teal;
+                font-size: larger;
+            }
+            li:hover{
+                color:white;
+            }
+        </style>
+<div id="corps">
+    
+<div id="contenue">
+    <fieldset id="menu" style="height: max-content;margin-top:-1cm;border-radius:8px;position:fixed;float:left;" class="col-3">
+    <form action="../../client/index.php" method="post">
+        <i id="fermer2" style="width:2cm;height:2cm;background-color:red;color:white">
+
+        </i><br>
+        <button type="submit" id="class" name="profile">
+            <strong style="color:white">Profile</strong>
+        </button>
+        <br>
+        <button type="submit" id="class1" name="commande">
+            <strong style="color:white">Commandes</strong>
+        </button>           
+        <br>
+        <a href="../../../deconnexion.php" onclick="var nn= confirm('voulez-vous deconnecter?');if (nn == false) {
+            event.preventDefault()
+            ;}" id="class4">
+            <strong>
+                deconnexion
+            </strong>
+        </a>
+    </form>
+    </fieldset>
+</div>
+<center>
+<div id="body" style="margin-top:2cm">
+    
+</div>
+</center>
+
+<input type="text" name="nom" id="noms" value="<?php echo $_SESSION['nom'];?>">
+
+</div>
+</body>
+
+<style>
+    #menu::after{
+            zoom: 2;
+    }
+    #pub{
+        cursor:pointer;
+    }
+    #nom{
+        text-shadow: 0 0 0 0.5px rgb(2, 1, 1);
+    }
+    #nom:hover{
+        cursor: pointer;
+        color:rgb(9, 110, 117);
+        text-transform:lowercase;
+        text-shadow:0 0 0.5rem rgb(0, 0, 0);
+    }
+    button{
+        border-style: none;
+        background-color: transparent;
+        
+        text-decoration:none;
+    }
+    button:hover{
+        text-decoration: underline;
+        color:white;
+    }
+    #fermer1, #fermer2,#fermer:hover{
+            cursor: pointer;
+    }
+    #notification{
+        zoom:1.5;
+    }
+</style>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/nav.js"></script>
+</html>

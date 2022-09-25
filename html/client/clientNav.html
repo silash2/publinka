@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecter</title>
+</head>
+
+    <nav class="fixed-top me col navbar-brand">
+        <center>
+      <i style="border-radius: 1cm;background-color: azure;float:left" >
+                <big id="pub">
+                    PB
+                </big>
+                <i id="link"></i>
+                 </i>
+           
+        
+        <a href="#" style="float:right" id="reception" class="btn btn-outline-light">Reception <sup style="height:1cm;width:5cm;background-color:red;border-radius: 10px;color:white" id="notification"></sup> </a>
+        <a href="#" id="commande" style="float:right;margin-right:1cm" class="btn btn-outline-light">Commander mon projet</a>
+    </center>
+</center>
+    </nav>
+    <body>
+        <div id="select" style="float: right;margin-top:-0.9cm; margin-right: 4cm;border-radius: 10px;"class="col-2 me">
+            <ul>
+                <form action="../client.php" method="post">
+                    <b>
+                    <li><input type="submit" name="spot" style="border-color:none;border-style:none;color:black;background-color:transparent" value="Spot Pub(2D)"></li>
+                    <li><input type="submit" name="logo" style="border-color:none;border-style:none;color:black;background-color:transparent" value="Logo"></li>
+                    <li><input type="submit" name="affiche" style="border-color:none;border-style:none;color:black;background-color:transparent" value="Affiche"></li>
+                    <li><input type="submit" name="carte" style="border-color:none;border-style:none;color:black;background-color:transparent" value="Carte de visite"></li>
+                </b>
+                </form>
+            </ul>
+        </div>
+
+        <div  style="float: right;margin-top:-0.9cm;border-radius: 10px;"class="col-2 me">
+            
+            <p id="list">
+                        
+            </p>
+
+            <p id="list1" >
+                        
+            </p>
+
+            <p id="list2" >
+                        
+            </p>
+            
+            <p id="list3" >
+                        
+            </p>
+        </div>
+        <style>
+            input[type="submit"]{
+                color:teal;
+                font-size: larger;
+            }
+            li:hover{
+                color:white;
+            }
+        </style>
+<div id="corps">
+    
+<div id="contenue">
+    <fieldset id="menu" style="height: max-content;margin-top:-1cm;border-radius:8px;position:fixed;float:left;" class="col-3">
+    <form action="../../client/clientactivity/index.php" method="post">
+        <button type="submit" id="class" name="profile">
+            <strong style="color:white">Mon profile</strong>
+        </button>
+        <br>
+        <button type="submit" id="class1" name="commande">
+            <strong style="color:white">Mes commandes</strong>
+        </button>
+        <br>
+        <a href="../../../deconnexion.php" onclick="var nn= confirm('voulez-vous deconnecter?');if (nn == false) {
+            event.preventDefault()
+            ;}" id="class4">
+            <strong>
+                deconnecter
+            </strong>
+        </a>
+    </form>
+    </fieldset>
+</div>
+<center>
+<div id="body" style="margin-top:2cm">
+    
+</div>
+</center>
+<div class="fixed-bottom col me" style="color:white">
+connecter en tant que
+    <strong id="nom" >
+                    
+    </strong>
+
+</div>
+<input type="text" name="nom" id="noms" value="<?php echo $_SESSION['nom'];?>">
+
+</div>
+</body>
+
+<style>
+    #menu::after{
+            zoom: 2;
+    }
+    #pub{
+        cursor:pointer;
+    }
+    #nom{
+        text-shadow: 0 0 0 0.5px rgb(2, 1, 1);
+    }
+    #nom:hover{
+        cursor: pointer;
+        color:rgb(9, 110, 117);
+        text-transform:lowercase;
+        text-shadow:0 0 0.5rem rgb(0, 0, 0);
+    }
+    button{
+        border-style: none;
+        background-color: transparent;
+        
+        text-decoration:none;
+    }
+    button:hover{
+        text-decoration: underline;
+        color:white;
+    }
+</style>
+</html>

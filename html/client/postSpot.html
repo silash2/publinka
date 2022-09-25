@@ -1,0 +1,37 @@
+<?php
+$_SESSION['projet'] = $_POST['spot'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster mon spot | publinka</title>
+</head>
+<body>
+    <center>
+        <form action="../../php/client/saveFile.php" style="margin-top: 3em;margin-left: 3em;" method="post" enctype="multipart/form-data">
+            <input type="file" name="fichier" id="inp" >
+            <br>
+            <h4>Quel est votre couleur preferer?</h4>
+            <select name="couleur" id="inp1" required>
+                <option value="">Votre couleur</option>
+            <?php 
+            $nombre = -1;
+            $arrays = ['bleu','violet','orange','blanc','noire','verte','rouge','orenge','marron','gris','jaune','rose'];
+            while($nombre < 11){
+                $nombre = $nombre +1;
+                ?>
+                <option value="<?php echo $arrays[$nombre];?>"><?php echo $arrays[$nombre];?></option>
+                <?php
+            } ?>
+        </select>
+            <br>
+            <textarea name="texte" id="txt1" required cols="10" rows="5" placeholder="Description de votre projet ici..."></textarea>
+            <br>
+            <input type="submit" name="valid" style="margin-left:-1cm" id="inp2" value="Valider">
+        </form>
+    </center>
+</body>
+</html>

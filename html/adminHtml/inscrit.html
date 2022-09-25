@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecter</title>
+</head>
+<body>
+    <nav class="fixed-top shadow me col navbar-brand">
+        <center>
+      <i style="border-radius: 1cm;background-color: azure;float:left" >
+                <big id="pub">
+                    PB
+                </big>
+                <i id="link"></i>
+        </i>
+            <strong id="nom" style="position:fixed">
+                    
+            </strong>
+        
+        <a href="#" style="float:right" class="btn btn-outline-light">Reception</a>
+        <a href="#" style="float:right;margin-right:1cm" class="btn btn-outline-light">Commander mon page</a>
+    </center>
+</center>
+    </nav>
+<div id="contenue">
+    <fieldset id="menu" style="height: max-content;margin-top:2cm;border-radius:10px;position:fixed">
+        <a href="#" id="class">Mon profile</a><br>
+        <a href="#" id="class1">Mes commandes</a><br>
+        <a href="#" id="class2">Discution</a><br>
+        <a href="#" id="class3">Parametre</a><br>
+        <a href="../../../php/log/index.php" id="class4">deconnecter</a>
+    </fieldset>
+</div>
+<div>
+</div>
+<input type="text" name="nom" id="noms" value="<?php echo $_POST['nomEtprenom'];?>">
+</body>
+
+<style>
+    #pub{
+        cursor:pointer;
+        
+    }
+</style>
+
+</html>

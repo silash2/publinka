@@ -1,0 +1,53 @@
+
+
+    <center>
+        <h1  id="accueil" style="float:left;height:2cm;width:4cm;border-radius: 10px;background-color:skyblue">
+            Accueil
+        </h1>
+        <h1 id="accueil">
+            <i href="#" class="clicks"> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  </svg><sup id="nvMembre"></sup>
+            </i>
+            <br>
+            <div id="selectation" style="float:initial;font-size: small;width:4cm;color:black;border-radius:15px;height:4cm" class="navbar">
+            </div>
+        
+        </h1>
+        </div>
+        </form>
+        <style>
+            #annonce,#commandes{
+                float:left;
+            }
+            #formulaire,#formulaire1{
+                background-color: grey;
+                border-radius: 20px;
+            }
+        </style>
+    </center>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/jquery-ui.min.js"></script>
+<script>
+    function left(params) {
+        
+$(window).resize(function() {
+$("#reception").css("float","right");
+$("#commande").css("float","right");
+});
+    }
+    $(".clicks").click(function (params) {
+        $("#selectation").show("slow");
+        $("#selectation").load("../admin/connected/membreVerification1.php");
+    });
+    $("#selectation").hide();
+    $(window).scroll(function (params) {
+        $("#selectation").hide();
+    })
+</script>
+<script src="../../js/informations/activity.js"></script>
+<script src="../../js/informations/cord.js"></script>
+<script src="../../js/nvMembre.js"></script>
+</html>
